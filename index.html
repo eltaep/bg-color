@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heloo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <button>click me!</button>
+
+    <script>
+            let color;
+
+        let arr=[1,2,3,4,5,6,7,8,9,0,'a','b','c','d','e','f']
+        document.querySelector('button').addEventListener('click',()=>{
+         color='#';
+
+            for(let i=0;i<6;i++){
+
+                color+=arr[Math.floor(Math.random()*arr.length)]
+            }
+            document.body.style.backgroundColor=color;console.log(color)
+            
+        })
+    </script>
+</body>
+</html>
